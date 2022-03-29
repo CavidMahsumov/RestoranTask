@@ -1,0 +1,35 @@
+﻿@model RestoranTask.Models.MealListViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body style="background-color :red;">
+
+    <div>
+        <div>
+
+            <h1>Drinks</h1>
+             @foreach (var item in Model.drinks)
+                {
+                   
+                    <h2 style="display:inline-block; margin-left:30px" >@item.Name</h2>
+                }
+                <br />
+               @foreach (var item in Model.drinks)
+               {
+                   <h2 style="display:inline-block;margin-left:40px">@item.Price</h2>
+               }
+
+        </div>
+    </div>
+
+</body>
+</html>
