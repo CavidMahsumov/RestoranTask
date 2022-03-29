@@ -11,23 +11,66 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 </head>
-<body style="background-color :red;">
+<body style="background-color :white;">
 
     <div>
         <div>
 
             <h1>Drinks</h1>
+            <div>
+               <img style=" margin-left:10px ; display:inline-block; width:100px;height:100px" src="~/img/Coca.png" />
+                <img style=" display:inline-block; margin-left: 10px;  width: 100px; height: 100px" src="~/img/f.jpg" />
+                <img style=" display: inline-block; margin-left: 10px;  width: 100px; height: 100px" src="~/img/pp.jpg" />
+            </div>
              @foreach (var item in Model.drinks)
                 {
                    
-                    <h2 style="display:inline-block; margin-left:30px" >@item.Name</h2>
+                    <h2 style="display:inline-block; margin-left:45px" >@item.Name</h2>
                 }
                 <br />
                @foreach (var item in Model.drinks)
                {
-                   <h2 style="display:inline-block;margin-left:40px">@item.Price</h2>
+                   <h2 style="display:inline-block;margin-left:50px">@item.Price</h2>
                }
 
+        </div>
+        <div>
+            <h1>Fast Foods</h1>
+            <div>
+                <img style=" margin-left:10px ; display:inline-block; width:100px;height:100px" src="~/img/kf.png" />
+                <img style=" display:inline-block; margin-left: 10px;  width: 100px; height: 100px" src="~/img/bb.png" />
+                <img style=" display: inline-block; margin-left: 10px;  width: 100px; height: 100px" src="~/img/p.png" />
+            </div>
+            @foreach (var item in Model.fastfoods)
+            {
+
+                <h2 style="display:inline-block; margin-left:35px">@item.Name</h2>
+            }
+            <br />
+            @foreach (var item in Model.fastfoods)
+            {
+                <h2 style="display:inline-block;margin-left:55px">@item.Price</h2>
+            }
+
+
+        </div>
+        <div>
+            <h1>Meals</h1>
+            <div>
+                <img style=" margin-left:10px ; display:inline-block; width:100px;height:100px" src="~/img/yd.png" />
+                <img style=" display:inline-block; margin-left: 10px;  width: 100px; height: 100px" src="~/img/as.jpg" />
+                <img style=" display: inline-block; margin-left: 10px;  width: 100px; height: 100px" src="~/img/kb.png" />
+            </div>
+            @foreach (var item in Model.meals)
+            {
+
+                <h2 style="display:inline-block; margin-left:35px">@item.Name</h2>
+            }
+            <br />
+            @foreach (var item in Model.meals)
+            {
+                <h2 style="display:inline-block;margin-left:65px">@item.Price</h2>
+            }
         </div>
     </div>
 
